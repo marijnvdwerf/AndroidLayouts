@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+   <declare-styleable name="FixedAspectRatioFrameLayout">
+      <attr name="aspectRatio" format="float" />
+      <attr name="stretchMode">
+         <enum name="vertical" value="1" />
+         <enum name="horizontal" value="0" />
+      </attr>
+   </declare-styleable>
+</resources>
