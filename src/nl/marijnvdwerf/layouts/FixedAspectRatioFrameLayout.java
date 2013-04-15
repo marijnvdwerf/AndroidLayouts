@@ -39,15 +39,15 @@ public class FixedAspectRatioFrameLayout extends FrameLayout {
 
         if (mStretchMode == STRETCH_VERTICAL) {
             height = (int) ((double) width / mAspectRatio);
-            if (height < getMinimumHeight()) {
-                height = getMinimumHeight();
+            if (height < getSuggestedMinimumHeight()) {
+                height = getSuggestedMinimumHeight();
             }
             heightMeasureSpec = MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY);
 
         } else {
             width = (int) ((double) height * mAspectRatio);
-            if (width < getMinimumWidth()) {
-                width = getMinimumWidth();
+            if (width < getSuggestedMinimumWidth()) {
+                width = getSuggestedMinimumWidth();
             }
             widthMeasureSpec = MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY);
         }
